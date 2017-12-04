@@ -80,7 +80,7 @@ app.post('/login', async (req, res) => {
     
 });
 
-mongoose.connect('mongodb://mean-test-user:mean-test-password@ds129066.mlab.com:29066/mean-social', {useMongoClient: true,},
+mongoose.connect('mongodb://<user>:<password>@ds129066.mlab.com:29066/mean-social', {useMongoClient: true,},
     (error) => {
     if(!error){
         console.log('connected to MongoDB');
